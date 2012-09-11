@@ -3,13 +3,14 @@
 Plugin Name: Font Awesome Icons
 Plugin URI: http://www.rachelbaker.me
 Description: Font Awesome (http://fortawesome.github.com/Font-Awesome) Icons for use in WordPress.
-Version: 1.0
+Version: 1.1
 Author: Rachel Baker
 Author URI: http://www.rachelbaker.me
 Author Email: rachel@rachelbaker.me
 Credits:
 	The Font Awesome icon set was created by Dave Gandy (dave@davegandy.com)
 	 http://fortawesome.github.com/Font-Awesome/
+
 License:
   Copyright 2012 Plugged In Consulting, Inc. (rachel@rachelbaker.me)
 
@@ -36,11 +37,21 @@ class FontAwesome {
 
 	public function init() {
 		add_action( 'wp_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
+        add_shortcode('icon', array( &$this, 'setup_shortcode' ) );
+        add_filter('widget_text', 'do_shortcode');
 	}
 
 	public function register_plugin_styles() {
-		wp_enqueue_style( 'font-awesome-styles', plugins_url( 'font-awesome/css/font-awesome.css' ) );
+		wp_enqueue_style( 'font-awesome-styles', plugins_url( '/css/font-awesome.css', __FILE__  ) );
 	}
+
+    public function setup_shortcode($params) {
+     extract( shortcode_atts( array(
+             'name'  => 'icon-wrench'
+             ), $params));
+     $icon = '<i class="'.$params['name'].'">&nbsp;</i>';
+     return $icon;
+    }
 
 }
 
