@@ -37,6 +37,7 @@ Chevron left icon `[icon name=icon-chevron-left]`
 ##Release Notes
 
 __Version 1.1__
+
 Created and enabled shortcode
 
 __Version 1.0__
