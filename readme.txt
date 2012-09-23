@@ -1,27 +1,21 @@
-#Font Awesome Icons
-
+=== Font Awesome Icons ===
 Contributors: rachelbaker
-
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
-
 Requires at least: 3.0
-
 Tested up to: 3.4.2
-
 Stable tag: 1.2
-
 License: GPLv3 or later
-
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
 
+== Description ==
+
 Font Awesome is a pictographic font set of 220 icons.  The icons are infitinely scalable and screen reader compatible.
 
 A full list of the 220 Font Awesome icons is available: [http://fortawesome.github.com/Font-Awesome/#all-icons](http://fortawesome.github.com/Font-Awesome/#all-icons)
 
-##Usage Instructions
 
 To use any of the Font Awesome icons on your WordPress site you have two options:
 
@@ -62,12 +56,24 @@ Chevron left icon
 
 `[icon name=icon-chevron-left]`
 
-##Icons
+
+__Credits__
+
+ * Font Awesome webfont and associated code are licensed under CC BY 3.0 and is a production of @fortaweso_me, by Dave Gandy.
+
+__Contributors Welcome__
+
+*   Submit a [pull request on Github](https://github.com/rachelbaker/Font-Awesome-WordPress-Plugin)
+
+__Author__
+
+*   [Rachel Baker](http://rachelbaker.me)
+
+= Icons =
 
 ![image](http://f.cl.ly/items/3Q3Z0Z30153Q3a2e3i1M/FontAwesome-Vectors.jpg)
 
-
-##Installation
+== Installation ==
 
 1. Upload Font Awesome Icons to the `/wp-content/plugins/` directory.
 
@@ -77,46 +83,38 @@ Chevron left icon
 
 The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
 
-##Release Notes
+**Example:**
 
-__Version 1.2__
-
-Added IE7 conditional stylesheet
-
-__Version 1.1__
-
-Created and enabled shortcode
-
-__Version 1.0__
-
-Initial release
-
-__Upcoming Versions Wishlist__
-
-*   Add TinyMCE button to allow easy insertation of Font Awesome icon
+`[icon name=icon-pencil]`
 
 
-##Author
+4. You can use HTML by adding the appropiate class to the `<i>` element.
 
-- [Rachel Baker](http://rachelbaker.me)
+All code examples on the Font Awesome site apply: [http://fortawesome.github.com/Font-Awesome/#code](http://fortawesome.github.com/Font-Awesome/#code)
 
-##Credits
+**Example:**
 
- Font Awesome webfont and associated code are licensed under CC BY 3.0 and is a production of @fortaweso_me, by Dave Gandy.
+`<i class="icon-pencil"></i>`
 
-##License
-License:
-    Copyright (C) 2012  Rachel Baker, Plugged In Consulting, Inc.
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+== Screenshots ==
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+1.  HTML code samples
+2.  Shortcode samples
+3.  Full icon list
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+== Changelog ==
+
+= 1.2 =
+
+* Added IE7 CSS
+
+= 1.1 =
+
+* Created and enabled shortcode
+
+= 1.0 =
+
+* Initial release
