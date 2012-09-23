@@ -14,6 +14,8 @@ License: GPLv3 or later
 
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
+![image](http://f.cl.ly/items/3Y0C0i270N281b0v2Q3y/banner-772x250.png)
+
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
 
