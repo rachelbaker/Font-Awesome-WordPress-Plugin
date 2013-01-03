@@ -6,9 +6,9 @@ Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
 Requires at least: 3.0
 
-Tested up to: 3.4.2
+Tested up to: 3.5
 
-Stable tag: 1.2
+Stable tag: 3.0
 
 License: GPLv3 or later
 
@@ -19,9 +19,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
 
-Font Awesome is a pictographic font set of 220 icons.  The icons are infitinely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 249 icons.  The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 220 Font Awesome icons is available: [http://fortawesome.github.com/Font-Awesome/#all-icons](http://fortawesome.github.com/Font-Awesome/#all-icons)
+A full list of the 249 Font Awesome icons is available: [http://fortawesome.github.com/Font-Awesome/#all-icons](http://fortawesome.github.com/Font-Awesome/#all-icons)
 
 ##Usage Instructions
 
@@ -64,9 +64,6 @@ Chevron left icon
 
 `[icon name=icon-chevron-left]`
 
-##Icons
-
-![image](http://f.cl.ly/items/3Q3Z0Z30153Q3a2e3i1M/FontAwesome-Vectors.jpg)
 
 
 ##Installation
@@ -80,6 +77,10 @@ Chevron left icon
 The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
 
 ##Release Notes
+
+__Version 3.0__
+
+Updated font and CSS files to Font Awesome 3.0 release.
 
 __Version 1.2__
 
