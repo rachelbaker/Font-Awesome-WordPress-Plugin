@@ -52,7 +52,7 @@ class FontAwesome {
         extract( shortcode_atts( array(
                     'name'  => 'icon-wrench'
                 ), $params ) );
-        $icon = '<i class="'.$params['name'].'">&nbsp;</i>';
+        $icon = '<i class="'.$name.'">&nbsp;</i>';
 
         return $icon;
     }
