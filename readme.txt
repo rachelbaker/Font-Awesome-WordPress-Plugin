@@ -107,6 +107,18 @@ All code examples on the Font Awesome site apply: [http://fortawesome.github.com
 
 == Changelog ==
 
+
+= 3l1 =
+
+* Updated font and CSS files to Font Awesome 3.1 release.
+* Updated urls to new Font Awesome URL
+
+
+= 3.0 =
+
+* Updated font and CSS files to Font Awesome 3.0 release.
+
+
 = 1.2 =
 
 * Added IE7 CSS

@@ -78,6 +78,12 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 ##Release Notes
 
+__Version 3.1__
+
+Updated font and CSS files to Font Awesome 3.1 release.
+Updated urls to new Font Awesome URL
+
+
 __Version 3.0__
 
 Updated font and CSS files to Font Awesome 3.0 release.
