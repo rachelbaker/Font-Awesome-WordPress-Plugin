@@ -6,9 +6,9 @@ Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
 Requires at least: 3.0
 
-Tested up to: 3.5
+Tested up to: 3.6 beta2
 
-Stable tag: 3.0
+Stable tag: 3.1
 
 License: GPLv3 or later
 
@@ -19,9 +19,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
 
-Font Awesome is a pictographic font set of 249 icons.  The icons are infinitely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 302 icons.  The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 249 Font Awesome icons is available: [http://fortawesome.github.com/Font-Awesome/#all-icons](http://fortawesome.github.com/Font-Awesome/#all-icons)
+A full list of the 302 Font Awesome icons is available: [http://fontawesome.io/icons/](http://fontawesome.io/icons/)
 
 ##Usage Instructions
 
@@ -29,7 +29,7 @@ To use any of the Font Awesome icons on your WordPress site you have two options
 
 __HTML Option__
 
-All code examples on the Font Awesome site apply: [http://fortawesome.github.com/Font-Awesome/#code](http://fortawesome.github.com/Font-Awesome/#code)
+All code examples on the Font Awesome site apply: [http://fontawesome.io/examples/](http://fontawesome.io/examples/)
 
 **Examples**
 
@@ -80,9 +80,10 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 __Version 3.1__
 
-Updated font and CSS files to Font Awesome 3.1 release.
-Updated urls to new Font Awesome URL
-
+Updated font and CSS files to Font Awesome 3.1 release. (Thanks to @Taylor4484)
+Updated reference urls to new Font Awesome URL. (Thanks to @Taylor4484)
+Added build/icons.yml file for reference. (Thanks to @BFTrick)
+Updated reference PDF file with Font Awesome 3.1 icons.
 
 __Version 3.0__
 
