@@ -80,10 +80,10 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 __Version 3.1__
 
-Updated font and CSS files to Font Awesome 3.1 release. (Thanks to @Taylor4484)
-Updated reference urls to new Font Awesome URL. (Thanks to @Taylor4484)
-Added build/icons.yml file for reference. (Thanks to @BFTrick)
-Updated reference PDF file with Font Awesome 3.1 icons.
+*   Updated font and CSS files to Font Awesome 3.1 release. (Thanks to @Taylor4484)
+*   Updated reference urls to new Font Awesome URL. (Thanks to @Taylor4484)
+*   Added build/icons.yml file for reference. (Thanks to @BFTrick)
+*   Updated reference PDF file with Font Awesome 3.1 icons.
 
 __Version 3.0__
 
