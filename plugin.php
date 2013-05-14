@@ -13,7 +13,7 @@ Credits:
 
 License:
 
-  Copyright (C) 2012  Rachel Baker, Plugged In Consulting, Inc.
+  Copyright (C) 2013  Rachel Baker
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
