@@ -2,8 +2,8 @@
 Contributors: rachelbaker
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.2
+Tested up to: 3.6 beta2
+Stable tag: 3.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,16 +12,15 @@ Enables easy use of the Font Awesome icon font set from within WordPress.  Icons
 
 == Description ==
 
-Font Awesome is a pictographic font set of 220 icons.  The icons are infitinely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 302 icons.  The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 220 Font Awesome icons is available: [http://fortawesome.github.com/Font-Awesome/#all-icons](http://fortawesome.github.com/Font-Awesome/#all-icons)
-
+A full list of the 302 Font Awesome icons is available: [http://f.cl.ly/items/413S2v2c2O2S3F3H3O0G/FontAwesomeIconsCheatsheet.pdf](FontAwesomeIconsCheatsheet.pdf)
 
 To use any of the Font Awesome icons on your WordPress site you have two options:
 
 __HTML Option__
 
-All code examples on the Font Awesome site apply: [http://fortawesome.github.com/Font-Awesome/#code](http://fortawesome.github.com/Font-Awesome/#code)
+All code examples on the Font Awesome site apply: [http://fontawesome.io/examples/](http://fontawesome.io/examples/)
 
 **Examples**
 
@@ -57,10 +56,6 @@ Chevron left icon
 `[icon name=icon-chevron-left]`
 
 
-__Credits__
-
- * Font Awesome webfont and associated code are licensed under CC BY 3.0 and is a production of @fortaweso_me, by Dave Gandy.
-
 __Contributors Welcome__
 
 *   Submit a [pull request on Github](https://github.com/rachelbaker/Font-Awesome-WordPress-Plugin)
@@ -68,10 +63,6 @@ __Contributors Welcome__
 __Author__
 
 *   [Rachel Baker](http://rachelbaker.me)
-
-= Icons =
-
-![image](http://f.cl.ly/items/3Q3Z0Z30153Q3a2e3i1M/FontAwesome-Vectors.jpg)
 
 == Installation ==
 
@@ -108,10 +99,12 @@ All code examples on the Font Awesome site apply: [http://fortawesome.github.com
 == Changelog ==
 
 
-= 3l1 =
+= 3.1 =
 
-* Updated font and CSS files to Font Awesome 3.1 release.
-* Updated urls to new Font Awesome URL
+*   Updated font and CSS files to Font Awesome 3.1 release. (Thanks to @Taylor4484)
+*   Updated reference urls to new Font Awesome URL. (Thanks to @Taylor4484)
+*   Added build/icons.yml file for reference. (Thanks to @BFTrick)
+*   Updated reference PDF file with Font Awesome 3.1 icons.
 
 
 = 3.0 =
