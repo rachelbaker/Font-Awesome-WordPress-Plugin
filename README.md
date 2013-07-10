@@ -19,9 +19,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
 
-Font Awesome is a pictographic font set of 302 icons.  The icons are infinitely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 302 Font Awesome icons is available: [http://f.cl.ly/items/413S2v2c2O2S3F3H3O0G/FontAwesomeIconsCheatsheet.pdf](FontAwesomeIconsCheatsheet.pdf)
+A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://cl.ly/172g053k2T2t)
 
 ##Usage Instructions
 
@@ -77,6 +77,12 @@ Chevron left icon
 The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
 
 ##Release Notes
+
+__Version 3.2.1__
+
+*   Updated font and CSS files to Font Awesome 3.2.1 release.
+*   Updated build/icons.yml file for reference.
+*   Updated reference PDF file with Font Awesome 3.2.1 icons.
 
 __Version 3.1__
 
