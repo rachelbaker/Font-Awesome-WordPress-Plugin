@@ -21,7 +21,7 @@ Enables easy use of the Font Awesome icon font set from within WordPress.  Icons
 
 Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf)(http://cl.ly/172g053k2T2t)
+A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://cl.ly/172g053k2T2t)
 
 ##Usage Instructions
 
