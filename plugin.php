@@ -31,32 +31,50 @@ License:
 */
 
 class FontAwesome {
-    public function __construct() {
-        add_action( 'init', array( &$this, 'init' ) );
+    private static $instance;
+
+    private static function has_instance() {
+        return isset(self::$instance) && self::$instance != null;
+    }
+
+    public static function get_instance() {
+        if (!self::has_instance())
+            self::$instance = new FontAwesome;
+        return self::$instance;
+    }
+
+    public static function setup() {
+        self::get_instance();
+    }
+
+    protected function __construct() {
+        if (!self::has_instance()) {
+            add_action('init', array(&$this, 'init'));
+        }
     }
 
     public function init() {
-        add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
-        add_shortcode( 'icon', array( $this, 'setup_shortcode' ) );
-        add_filter( 'widget_text', 'do_shortcode' );
+        add_action('wp_enqueue_scripts', array(&$this, 'register_plugin_styles'));
+        add_shortcode('icon', array($this, 'setup_shortcode'));
+        add_filter('widget_text', 'do_shortcode');
     }
 
     public function register_plugin_styles() {
         global $wp_styles;
-        wp_enqueue_style( 'font-awesome-styles', plugins_url( 'assets/css/font-awesome.min.css', __FILE__  ) );
-        wp_enqueue_style( 'font-awesome-ie7', plugins_url( 'assets/css/font-awesome-ie7.min.css', __FILE__ ), array(), '1.0', 'all'  );
-        $wp_styles->add_data( 'font-awesome-ie7', 'conditional', 'lte IE 7' );
+        wp_enqueue_style('font-awesome-styles', plugins_url('assets/css/font-awesome.min.css', __FILE__));
+        wp_enqueue_style('font-awesome-ie7', plugins_url('assets/css/font-awesome-ie7.min.css', __FILE__), array(), '1.0', 'all');
+        $wp_styles->add_data('font-awesome-ie7', 'conditional', 'lte IE 7');
     }
 
-    public function setup_shortcode( $params ) {
-        extract( shortcode_atts( array(
+    public function setup_shortcode($params) {
+        extract(shortcode_atts(array(
                     'name'  => 'icon-wrench'
-                ), $params ) );
-        $icon = '<i class="'.$params['name'].'">&nbsp;</i>';
+                ), $params));
+        $icon = '<i class="' . $params['name'] . '">&nbsp;</i>';
 
         return $icon;
     }
 
 }
 
-new FontAwesome();
+FontAwesome::setup();
