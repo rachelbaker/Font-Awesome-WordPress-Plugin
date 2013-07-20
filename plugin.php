@@ -32,6 +32,7 @@ License:
 
 class FontAwesome {
     private static $instance;
+    public const VERSION = '3.1';
 
     private static function has_instance() {
         return isset(self::$instance) && self::$instance != null;
@@ -61,8 +62,8 @@ class FontAwesome {
 
     public function register_plugin_styles() {
         global $wp_styles;
-        wp_enqueue_style('font-awesome-styles', plugins_url('assets/css/font-awesome.min.css', __FILE__));
-        wp_enqueue_style('font-awesome-ie7', plugins_url('assets/css/font-awesome-ie7.min.css', __FILE__), array(), '1.0', 'all');
+        wp_enqueue_style('font-awesome-styles', plugins_url('assets/css/font-awesome.min.css', __FILE__), array(), self::VERSION, 'all');
+        wp_enqueue_style('font-awesome-ie7', plugins_url('assets/css/font-awesome-ie7.min.css', __FILE__), array(), self::VERSION, 'all');
         $wp_styles->add_data('font-awesome-ie7', 'conditional', 'lte IE 7');
     }
 
