@@ -1,6 +1,6 @@
 #Font Awesome Icons
 
-Contributors: rachelbaker
+Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
@@ -8,7 +8,7 @@ Requires at least: 3.0
 
 Tested up to: 3.6 beta2
 
-Stable tag: 3.1
+Stable tag: 3.2.1
 
 License: GPLv3 or later
 
@@ -80,9 +80,9 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 __Version 3.2.1__
 
-*   Updated font and CSS files to Font Awesome 3.2.1 release.
-*   Updated build/icons.yml file for reference.
-*   Updated reference PDF file with Font Awesome 3.2.1 icons.
+*   Updated font and CSS files to Font Awesome 3.2.1 release. (Thanks to @tommarshall)
+*   Updated build/icons.yml file for reference. (Thanks to @tommarshall)
+*   Updated reference PDF file with Font Awesome 3.2.1 icons. (Thanks to @tommarshall)
 
 __Version 3.1__
 
@@ -122,12 +122,9 @@ __Upcoming Versions Wishlist__
 
 ##License
 License:
-    Copyright (C) 2012  Rachel Baker, Plugged In Consulting, Inc.
+    Copyright (C) 2013 Rachel Baker
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
