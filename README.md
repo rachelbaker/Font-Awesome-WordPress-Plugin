@@ -51,6 +51,7 @@ Don't want to worry about HTML tags?  You can use a shortcode in your posts, pag
 
 The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
 
+**Examples**
 
 Pencil icon
 
@@ -64,6 +65,11 @@ Chevron left icon
 
 `[icon name=icon-chevron-left]`
 
+__TinyMCE Glyphs Drop-down__
+
+Select the icon you would like to add to your post or page content from the Glyphs drop-down menu in the Visual Editor.
+
+![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg) 
 
 
 ##Installation
