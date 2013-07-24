@@ -1,6 +1,6 @@
 #Font Awesome Icons
 
-Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall
+Contributors: @rachelbaker, @BFTrick, @Taylor4484, @tommarshall, @rscarvalho
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
@@ -83,6 +83,8 @@ __Version 3.2.1__
 *   Updated font and CSS files to Font Awesome 3.2.1 release. (Thanks to @tommarshall)
 *   Updated build/icons.yml file for reference. (Thanks to @tommarshall)
 *   Updated reference PDF file with Font Awesome 3.2.1 icons. (Thanks to @tommarshall)
+*   Added TinyMCE editor plugin, making it possible for the user to select font awesome glyphs from a drop-down list within the content editor.  (Thanks @rscarvalho)
+*   Added version number constant to cache bust assets for future plugin updates. (Thanks @rscarvalho)
 
 __Version 3.1__
 
