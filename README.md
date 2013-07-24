@@ -17,17 +17,17 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 ![image](http://f.cl.ly/items/3Y0C0i270N281b0v2Q3y/banner-772x250.png)
 
 
-Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
+Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML, shortcode, or a built-in TinyMCE plugin.
 
 Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://cl.ly/172g053k2T2t)
+A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://f.cl.ly/items/2e1b3q3g081M173m070I/FontAwesomeIconsCheatsheet.pdf)
 
 ##Usage Instructions
 
-To use any of the Font Awesome icons on your WordPress site you have two options:
+To use any of the Font Awesome icons on your WordPress site you have three options:
 
-__HTML Option__
+__HTML__
 
 All code examples on the Font Awesome site apply: [http://fontawesome.io/examples/](http://fontawesome.io/examples/)
 
@@ -45,7 +45,7 @@ Chevron left icon
 
 `<i class="icon-chevron-left"></i>`
 
-__Shortcode Option__
+__Shortcode__
 
 Don't want to worry about HTML tags?  You can use a shortcode in your posts, pages and even widgets to display a Font Awesome icon.
 
@@ -65,7 +65,7 @@ Chevron left icon
 
 `[icon name=icon-chevron-left]`
 
-__TinyMCE Glyphs Drop-down__
+__TinyMCE Plugin__
 
 Select the icon you would like to add to your post or page content from the Glyphs drop-down menu in the Visual Editor.
 
@@ -78,9 +78,10 @@ Select the icon you would like to add to your post or page content from the Glyp
 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-3. Add shortcode to your posts, pages and even widgets to display a Font Awesome icon.
+3. Use one of the three usage methods (HTML, Shortcode, or TinyMCE plugin) within the content of your posts or pages.   
 
-The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
+4. Use either the HTML or Shortcode methods inside your text widgets.
+
 
 ##Release Notes
 

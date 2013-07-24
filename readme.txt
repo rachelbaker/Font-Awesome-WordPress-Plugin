@@ -1,24 +1,25 @@
 === Font Awesome Icons ===
-Contributors: rachelbaker
+Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho
+
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
 Tested up to: 3.6 beta2
-Stable tag: 3.1
+Stable tag: 3.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
-Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML or a shortcode.
+Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML, shortcode, or a built-in TinyMCE plugin.
 
 == Description ==
 
-Font Awesome is a pictographic font set of 302 icons.  The icons are infinitely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 302 Font Awesome icons is available: [http://f.cl.ly/items/413S2v2c2O2S3F3H3O0G/FontAwesomeIconsCheatsheet.pdf](FontAwesomeIconsCheatsheet.pdf)
+A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://f.cl.ly/items/2e1b3q3g081M173m070I/FontAwesomeIconsCheatsheet.pdf)
 
-To use any of the Font Awesome icons on your WordPress site you have two options:
+To use any of the Font Awesome icons on your WordPress site you have three options:
 
-__HTML Option__
+__HTML__
 
 All code examples on the Font Awesome site apply: [http://fontawesome.io/examples/](http://fontawesome.io/examples/)
 
@@ -36,12 +37,13 @@ Chevron left icon
 
 `<i class="icon-chevron-left"></i>`
 
-__Shortcode Option__
+__Shortcode__
 
 Don't want to worry about HTML tags?  You can use a shortcode in your posts, pages and even widgets to display a Font Awesome icon.
 
 The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
 
+**Examples**
 
 Pencil icon
 
@@ -55,6 +57,11 @@ Chevron left icon
 
 `[icon name=icon-chevron-left]`
 
+__TinyMCE Plugin__
+
+Select the icon you would like to add to your post or page content from the Glyphs drop-down menu in the Visual Editor.
+
+![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg) 
 
 __Contributors Welcome__
 
@@ -70,33 +77,31 @@ __Author__
 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-3. Add shortcode to your posts, pages and even widgets to display a Font Awesome icon.
+3. Use one of the three usage methods (HTML, Shortcode, or TinyMCE plugin) within the content of your posts or pages.   
 
-The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of the icon you would like to use.
+4. Use either the HTML or Shortcode methods inside your text widgets.
 
-**Example:**
-
-`[icon name=icon-pencil]`
-
-
-4. You can use HTML by adding the appropiate class to the `<i>` element.
-
-All code examples on the Font Awesome site apply: [http://fortawesome.github.com/Font-Awesome/#code](http://fortawesome.github.com/Font-Awesome/#code)
-
-**Example:**
-
-`<i class="icon-pencil"></i>`
 
 
 == Screenshots ==
 
 1.  HTML code samples
 2.  Shortcode samples
-3.  Full icon list
+3.  TinyMCE plugin
+4.  Full icon list
+
 
 
 
 == Changelog ==
+
+= 3.2.1 = 
+
+*   Updated font and CSS files to Font Awesome 3.2.1 release. (Thanks to @tommarshall)
+*   Updated build/icons.yml file for reference. (Thanks to @tommarshall)
+*   Updated reference PDF file with Font Awesome 3.2.1 icons. (Thanks to @tommarshall)
+*   Added TinyMCE editor plugin, making it possible for the user to select font awesome glyphs from a drop-down list within the content editor.  (Thanks @rscarvalho)
+*   Added version number constant to cache bust assets for future plugin updates. (Thanks @rscarvalho)
 
 
 = 3.1 =
