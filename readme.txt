@@ -1,10 +1,10 @@
 === Font Awesome Icons ===
-Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho
+Contributors: @rachelbaker, @BFTrick, @Taylor4484, @tommarshall, @rscarvalho
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 3.6 beta2
-Stable tag: 3.2.1
+Tested up to: 3.7.1
+Stable tag: 4.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,9 +13,9 @@ Enables easy use of the Font Awesome icon font set from within WordPress.  Icons
 
 == Description ==
 
-Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 370 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://f.cl.ly/items/2e1b3q3g081M173m070I/FontAwesomeIconsCheatsheet.pdf)
+A full list of the 370 Font Awesome icons is available: [Font Awesome Cheatsheet](http://fontawesome.io/cheatsheet/)
 
 To use any of the Font Awesome icons on your WordPress site you have three options:
 
@@ -27,15 +27,15 @@ All code examples on the Font Awesome site apply: [http://fontawesome.io/example
 
 Pencil icon
 
-`<i class="icon-pencil"></i>`
+`<i class="fa-pencil"></i>`
 
 Phone icon
 
-`<i class="icon-phone"></i>`
+`<i class="fa-phone"></i>`
 
 Chevron left icon
 
-`<i class="icon-chevron-left"></i>`
+`<i class="fa-chevron-left"></i>`
 
 __Shortcode__
 
@@ -47,15 +47,15 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 Pencil icon
 
-`[icon name=icon-pencil]`
+`[icon name=fa-pencil]`
 
 Phone icon
 
-`[icon name=icon-phone]`
+`[icon name=fa-phone]`
 
 Chevron left icon
 
-`[icon name=icon-chevron-left]`
+`[icon name=fa-chevron-left]`
 
 __TinyMCE Plugin__
 
@@ -94,6 +94,16 @@ __Author__
 
 
 == Changelog ==
+
+= 4.0.1 =
+
+*   Updated font and CSS files to Font Awesome 4.0.1 release. (Thanks to @Taylor4484)
+*   Dropped Support for IE7, as Font Awesome 4.0.1 doesn't support IE7.  (Thanks to @Taylor4484)
+*   Fixed issue where TinyMCE would delete the shortcode when switching from visual to text editor. (Thanks to @Taylor4484)
+*   Updated enqueue to use NetDNA CDN as recommended by FA. (Thanks to @Taylor4484)
+*   Updated build/icons.yml file for reference. (Thanks to @Taylor4484)
+*   Updated reference PDF file with Font Awesome  4.0.1 icons. (Thanks to @Taylor4484)
+
 
 = 3.2.1 = 
 
