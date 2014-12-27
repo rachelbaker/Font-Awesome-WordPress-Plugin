@@ -77,11 +77,7 @@ class FontAwesome {
 	}
 
 	public function setup_shortcode($params) {
-		extract(shortcode_atts(array(
-					'name'  => '',
-				), $params) );
-
-		return '<i class="' . $params['name'] . '">&nbsp;</i>';
+		return '<i class="' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
 	}
 
 	public function register_tinymce_plugin($plugin_array) {
