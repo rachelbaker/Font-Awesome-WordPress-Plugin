@@ -39,7 +39,7 @@ class FontAwesome {
 	}
 
 	public static function get_instance() {
-		if (!self::has_instance()) {
+		if ( ! self::has_instance() ) {
 			self::$instance = new FontAwesome;
 		}
 		return self::$instance;
@@ -50,22 +50,22 @@ class FontAwesome {
 	}
 
 	protected function __construct() {
-		if (!self::has_instance()) {
-			add_action( 'init', array(&$this, 'init' ));
+		if ( ! self::has_instance() ) {
+			add_action( 'init', array( &$this, 'init' ) );
 		}
 	}
 
 	public function init() {
-		add_action( 'wp_enqueue_scripts', array(&$this, 'register_plugin_styles' ));
-		add_action( 'admin_enqueue_scripts', array(&$this, 'register_plugin_styles' ));
-		add_shortcode( 'icon', array($this, 'setup_shortcode' ));
+		add_action( 'wp_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
+		add_shortcode( 'icon', array( $this, 'setup_shortcode' ) );
 		add_filter( 'widget_text', 'do_shortcode' );
 
-		if ((current_user_can( 'edit_posts' ) || current_user_can( 'edit_pages' )) &&
-				get_user_option( 'rich_editing' )) {
-			add_filter( 'mce_external_plugins', array(&$this, 'register_tinymce_plugin' ));
-			add_filter( 'mce_buttons', array(&$this, 'add_tinymce_buttons' ));
-			add_filter( 'mce_css', array(&$this, 'add_tinymce_editor_sytle' ));
+		if ( (current_user_can( 'edit_posts' ) || current_user_can( 'edit_pages' ) ) &&
+				get_user_option( 'rich_editing' ) ) {
+			add_filter( 'mce_external_plugins', array( &$this, 'register_tinymce_plugin' ) );
+			add_filter( 'mce_buttons', array( &$this, 'add_tinymce_buttons' ) );
+			add_filter( 'mce_css', array( &$this, 'add_tinymce_editor_sytle' ) );
 		}
 	}
 
@@ -79,7 +79,7 @@ class FontAwesome {
 	public function setup_shortcode($params) {
 		extract(shortcode_atts(array(
 					'name'  => '',
-				), $params));
+				), $params) );
 
 		return '<i class="' . $params['name'] . '">&nbsp;</i>';
 	}
@@ -91,7 +91,7 @@ class FontAwesome {
 	}
 
 	public function add_tinymce_buttons($buttons) {
-		array_push($buttons, '|', 'fontAwesomeGlyphSelect' );
+		array_push( $buttons, '|', 'fontAwesomeGlyphSelect' );
 
 		return $buttons;
 	}
