@@ -39,8 +39,9 @@ class FontAwesome {
 	}
 
 	public static function get_instance() {
-		if (!self::has_instance())
+		if (!self::has_instance()) {
 			self::$instance = new FontAwesome;
+		}
 		return self::$instance;
 	}
 
