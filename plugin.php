@@ -56,15 +56,18 @@ class FontAwesome {
 	}
 
 	public function init() {
-		add_action( 'wp_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
-		add_action( 'admin_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_plugin_styles' ) );
+		add_action( 'admin_init', array( $this, 'add_tinymce_hooks' ) );
 		add_shortcode( 'icon', array( $this, 'setup_shortcode' ) );
 		add_filter( 'widget_text', 'do_shortcode' );
+	}
 
-		if ( (current_user_can( 'edit_posts' ) || current_user_can( 'edit_pages' ) ) &&
+	public function add_tinymce_hooks() {
+		if ( ( current_user_can( 'edit_posts' ) || current_user_can( 'edit_pages' ) ) &&
 				get_user_option( 'rich_editing' ) ) {
-			add_filter( 'mce_external_plugins', array( &$this, 'register_tinymce_plugin' ) );
-			add_filter( 'mce_buttons', array( &$this, 'add_tinymce_buttons' ) );
+			add_filter( 'mce_external_plugins', array( $this, 'register_tinymce_plugin' ) );
+			add_filter( 'mce_buttons', array( $this, 'add_tinymce_buttons' ) );
 			add_filter( 'mce_css', array( &$this, 'add_tinymce_editor_sytle' ) );
 		}
 	}
@@ -76,8 +79,8 @@ class FontAwesome {
 		$wp_styles->add_data( 'font-awesome-ie7', 'conditional', 'lte IE 7' );
 	}
 
-		return '<i class="' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
 	public function setup_shortcode( $params ) {
+		return '<i class="icon-' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
 	}
 
 	public function register_tinymce_plugin( $plugin_array ) {
@@ -86,8 +89,8 @@ class FontAwesome {
 		return $plugin_array;
 	}
 
-		array_push( $buttons, '|', 'fontAwesomeGlyphSelect' );
 	public function add_tinymce_buttons( $buttons ) {
+		array_push( $buttons, '|', 'font_awesome_glyphs' );
 
 		return $buttons;
 	}
