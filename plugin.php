@@ -35,7 +35,7 @@ class FontAwesome {
 	const VERSION = '3.2.1';
 
 	private static function has_instance() {
-		return isset(self::$instance) && self::$instance != null;
+		return isset( self::$instance ) && null != self::$instance;
 	}
 
 	public static function get_instance() {
@@ -76,18 +76,18 @@ class FontAwesome {
 		$wp_styles->add_data( 'font-awesome-ie7', 'conditional', 'lte IE 7' );
 	}
 
-	public function setup_shortcode($params) {
 		return '<i class="' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
+	public function setup_shortcode( $params ) {
 	}
 
-	public function register_tinymce_plugin($plugin_array) {
+	public function register_tinymce_plugin( $plugin_array ) {
 		$plugin_array['font_awesome_glyphs'] = plugins_url( 'assets/js/font-awesome.js', __FILE__ );
 
 		return $plugin_array;
 	}
 
-	public function add_tinymce_buttons($buttons) {
 		array_push( $buttons, '|', 'fontAwesomeGlyphSelect' );
+	public function add_tinymce_buttons( $buttons ) {
 
 		return $buttons;
 	}
