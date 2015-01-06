@@ -2,7 +2,7 @@
 	var ICONS;
 
 	var icon = function( id ) {
-		return '<i class="icon-' + id + '"></i>';
+		return '<i class="fa fa-' + id + '"></i>';
 	};
 
 	var iconShortcode = function( id ) {

@@ -80,7 +80,7 @@ class FontAwesome {
 	}
 
 	public function setup_shortcode( $params ) {
-		return '<i class="icon-' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
+		return '<i class="fa fa-' . esc_attr( $params['name'] ) . '">&nbsp;</i>';
 	}
 
 	public function register_tinymce_plugin( $plugin_array ) {
