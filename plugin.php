@@ -51,7 +51,7 @@ class FontAwesome {
 
 	protected function __construct() {
 		if ( ! self::has_instance() ) {
-			add_action( 'init', array( &$this, 'init' ) );
+			add_action( 'init', array( $this, 'init' ) );
 		}
 	}
 
@@ -68,7 +68,7 @@ class FontAwesome {
 				get_user_option( 'rich_editing' ) ) {
 			add_filter( 'mce_external_plugins', array( $this, 'register_tinymce_plugin' ) );
 			add_filter( 'mce_buttons', array( $this, 'add_tinymce_buttons' ) );
-			add_filter( 'mce_css', array( &$this, 'add_tinymce_editor_sytle' ) );
+			add_filter( 'mce_css', array( $this, 'add_tinymce_editor_sytle' ) );
 		}
 	}
 
