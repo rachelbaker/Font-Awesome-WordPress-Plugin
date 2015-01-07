@@ -75,8 +75,6 @@ class FontAwesome {
 	public function register_plugin_styles() {
 		global $wp_styles;
 		wp_enqueue_style( 'font-awesome-styles', plugins_url( 'assets/css/font-awesome.min.css', __FILE__ ), array(), self::VERSION, 'all' );
-		wp_enqueue_style( 'font-awesome-ie7', plugins_url( 'assets/css/font-awesome-ie7.min.css', __FILE__ ), array(), self::VERSION, 'all' );
-		$wp_styles->add_data( 'font-awesome-ie7', 'conditional', 'lte IE 7' );
 	}
 
 	public function setup_shortcode( $params ) {
