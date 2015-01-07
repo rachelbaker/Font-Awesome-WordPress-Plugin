@@ -1,4 +1,6 @@
-(function() {
+/*global tinymce:true */
+
+( function() {
 	var ICONS;
 
 	var icon = function( id ) {
