@@ -4,11 +4,11 @@ Contributors: @rachelbaker, @BFTrick, @Taylor4484, @tommarshall, @rscarvalho
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
-Requires at least: 3.0
+Requires at least: 3.9
 
-Tested up to: 3.6 beta2
+Tested up to: 4.1
 
-Stable tag: 3.2.1
+Stable tag: 4.2
 
 License: GPLv3 or later
 
@@ -35,15 +35,15 @@ All code examples on the Font Awesome site apply: [http://fontawesome.io/example
 
 Pencil icon
 
-`<i class="icon-pencil"></i>`
+`<i class="fa fa-pencil"></i>`
 
 Phone icon
 
-`<i class="icon-phone"></i>`
+`<i class="fa fa-phone"></i>`
 
 Chevron left icon
 
-`<i class="icon-chevron-left"></i>`
+`<i class="fa fa-chevron-left"></i>`
 
 __Shortcode__
 
@@ -55,21 +55,21 @@ The shortcode to use is `[icon name=name-of-icon]`, where name=X is the class of
 
 Pencil icon
 
-`[icon name=icon-pencil]`
+`[icon name=pencil]`
 
 Phone icon
 
-`[icon name=icon-phone]`
+`[icon name=phone]`
 
 Chevron left icon
 
-`[icon name=icon-chevron-left]`
+`[icon name=chevron-left]`
 
 __TinyMCE Plugin__
 
 Select the icon you would like to add to your post or page content from the Glyphs drop-down menu in the Visual Editor.
 
-![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg) 
+![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg)
 
 
 ##Installation
@@ -78,7 +78,7 @@ Select the icon you would like to add to your post or page content from the Glyp
 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
-3. Use one of the three usage methods (HTML, Shortcode, or TinyMCE plugin) within the content of your posts or pages.   
+3. Use one of the three usage methods (HTML, Shortcode, or TinyMCE plugin) within the content of your posts or pages.
 
 4. Use either the HTML or Shortcode methods inside your text widgets.
 

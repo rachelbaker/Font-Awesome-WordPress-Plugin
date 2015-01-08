@@ -3,13 +3,13 @@
 Plugin Name: Font Awesome Icons
 Plugin URI: http://www.rachelbaker.me
 Description: Use the Font Awesome icon set within WordPress. Icons can be inserted using either HTML or a shortcode.
-Version: 3.2.1
+Version: 4.2
 Author: Rachel Baker
 Author URI: http://rachelbaker.me/font-awesome-icons-wordpress-plugins/
 Author Email: rachel@rachelbaker.me
 Credits:
 	The Font Awesome icon set was created by Dave Gandy (dave@davegandy.com)
-	 http://fortawesome.github.com/Font-Awesome/
+	 http://fontawesome.io
 
 License:
 
@@ -32,7 +32,7 @@ License:
 
 class FontAwesome {
 	private static $instance;
-	const VERSION = '3.2.1';
+	const VERSION = '4.2';
 
 	private static function has_instance() {
 		return isset( self::$instance ) && null != self::$instance;
