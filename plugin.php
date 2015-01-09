@@ -51,7 +51,7 @@ class FontAwesome {
 
 	protected function __construct() {
 		if ( ! self::has_instance() ) {
-			add_action( 'init', array( $this, 'init' ) );
+			$this->init();
 		}
 	}
 
