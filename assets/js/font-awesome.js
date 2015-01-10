@@ -37,7 +37,7 @@
 				fixedWidth: true,
 				values: values,
 				onselect: function( e ) {
-					if (e) {
+					if ( e ) {
 						editor.insertContent( iconShortcode( e.control.settings.value ) );
 					}
 					return false;
