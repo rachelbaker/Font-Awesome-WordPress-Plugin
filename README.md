@@ -1,3 +1,5 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rachelbaker/Font-Awesome-WordPress-Plugin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rachelbaker/Font-Awesome-WordPress-Plugin/?branch=master)
+
 #Font Awesome Icons
 
 Contributors: @rachelbaker, @BFTrick, @Taylor4484, @tommarshall, @rscarvalho
