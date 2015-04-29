@@ -87,6 +87,10 @@ Select the icon you would like to add to your post or page content from the Glyp
 
 ##Release Notes
 
+__Version 4.3.0__
+
+*   Updated font and CSS files to Font Awesome 4.3.0 release. (Thanks to @jeezy7rwd)
+
 __Version 3.2.1__
 
 *   Updated font and CSS files to Font Awesome 3.2.1 release. (Thanks to @tommarshall)
