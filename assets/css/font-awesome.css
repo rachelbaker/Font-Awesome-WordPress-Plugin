@@ -150,6 +150,9 @@
   line-height: 2em;
   vertical-align: middle;
 }
+.fa-stack br { 
+  display: none; 
+}
 .fa-stack-1x,
 .fa-stack-2x {
   position: absolute;
