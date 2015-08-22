@@ -8,7 +8,7 @@ Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 
 Requires at least: 3.9
 
-Tested up to: 4.2
+Tested up to: 4.3
 
 Stable tag: 4.2
 
