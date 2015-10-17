@@ -81,9 +81,9 @@ class FontAwesome {
 	public function setup_shortcode( $params ) {
 		$icon_size = "";
 		if ($params['size']) {
-			$icon_size = "fa-" . $params['size'];
+			$icon_size = "fa-" . sanitize_html_class( $params['size'] );
 		}
-		$code = '<span class="fa fa-' . esc_attr( $params['name'] ) . $icon_size . '">&nbsp;</span>';
+		$code = '<span class="fa fa-' . sanitize_html_class( $params['name'] ) . $icon_size . '">&nbsp;</span>';
 		return $code;
 	}
 
