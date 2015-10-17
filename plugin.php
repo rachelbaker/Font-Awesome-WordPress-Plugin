@@ -79,7 +79,12 @@ class FontAwesome {
 	}
 
 	public function setup_shortcode( $params ) {
-		return '<span class="fa fa-' . esc_attr( $params['name'] ) . '">&nbsp;</span>';
+		$icon_size = "";
+		if ($params['size']) {
+			$icon_size = "fa-" . $params['size'];
+		}
+		$code = '<span class="fa fa-' . esc_attr( $params['name'] ) . $icon_size . '">&nbsp;</span>';
+		return $code;
 	}
 
 	public function register_tinymce_plugin( $plugin_array ) {
