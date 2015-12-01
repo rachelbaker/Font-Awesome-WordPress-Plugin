@@ -94,6 +94,10 @@ __Author__
 
 
 == Changelog ==
+= 4.5 = 
+
+*   Updated font and CSS files to Font Awesome 4.5.0 release. (Thanks to @jeezysevenrwd)
+
 
 = 3.2.1 = 
 
