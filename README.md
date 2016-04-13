@@ -1,10 +1,10 @@
 === Font Awesome Icons ===
-Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho
+Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho, @jeezysevenrwd
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 4.3
-Stable tag: 4.2
+Tested up to: 4.6.1
+Stable tag: 4.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -94,6 +94,12 @@ __Author__
 
 
 == Changelog ==
+
+===April 12, 2016 ===
+
+= 4.6 = 
+
+*   Updated font and CSS files to Font Awesome 4.6.1 release. (Thanks to @jeezysevenrwd)
 
 = 4.5 = 
 
