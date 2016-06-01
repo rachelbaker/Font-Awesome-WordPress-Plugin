@@ -3,7 +3,7 @@
 Plugin Name: Font Awesome Icons
 Plugin URI: http://www.rachelbaker.me
 Description: Use the Font Awesome icon set within WordPress. Icons can be inserted using either HTML or a shortcode.
-Version: 4.6
+Version: 4.6.1
 Author: Rachel Baker
 Author URI: http://rachelbaker.me/font-awesome-icons-wordpress-plugins/
 Author Email: rachel@rachelbaker.me
@@ -27,90 +27,55 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
  */
 
-class FontAwesome
-{
-    private static $instance;
-    const VERSION = '4.6';
+/**
+ * Constants
+ */
+define( 'FONTAWESOME_VERSION', '4.6.1' );
 
-    private static function has_instance()
-    {
-        return isset(self::$instance) && null != self::$instance;
-    }
+function fntawe_register_plugin_styles() {
+	global $wp_styles;
 
-    public static function get_instance()
-    {
-        if (!self::has_instance()) {
-            self::$instance = new FontAwesome;
-        }
-        return self::$instance;
-    }
+	wp_enqueue_style( 'font-awesome-styles', plugins_url( 'assets/css/font-awesome.css', __FILE__ ), array(), FONTAWESOME_VERSION, 'all' );
+}
+add_action( 'wp_enqueue_scripts', 'fntawe_register_plugin_styles' );
+add_action( 'admin_enqueue_scripts', 'fntawe_register_plugin_styles' );
 
-    public static function setup()
-    {
-        self::get_instance();
-    }
+function fntawe_setup_shortcode( $params ) {
+	return '<i class="fa fa-' . esc_attr( $params ['name']) . '">&nbsp;</i>';
+}
+add_shortcode( 'icon', 'fntawe_setup_shortcode' );
 
-    protected function __construct()
-    {
-        if (!self::has_instance()) {
-            $this->init();
-        }
-    }
+add_filter( 'widget_text', 'do_shortcode' );
 
-    public function init()
-    {
-        add_action('wp_enqueue_scripts', array($this, 'register_plugin_styles'));
-        add_action('admin_enqueue_scripts', array($this, 'register_plugin_styles'));
-        add_action('admin_init', array($this, 'add_tinymce_hooks'));
-        add_shortcode('icon', array($this, 'setup_shortcode'));
-        add_filter('widget_text', 'do_shortcode');
-    }
+function fntawe_add_tinymce_hooks() {
+	if ( ( current_user_can( 'edit_posts') || current_user_can( 'edit_pages' ) ) && get_user_option( 'rich_editing' ) ) {
+		add_filter( 'mce_external_plugins', 'fntawe_register_tinymce_plugin' );
+		add_filter( 'mce_buttons', 'fntawe_add_tinymce_buttons' );
+		add_filter( 'teeny_mce_buttons', 'fntawe_add_tinymce_buttons' );
+		add_filter( 'mce_css', 'fntawe_add_tinymce_editor_sytle' );
+	}
+}
+add_action( 'admin_init', 'fntawe_add_tinymce_hooks' );
 
-    public function add_tinymce_hooks()
-    {
-        if ((current_user_can('edit_posts') || current_user_can('edit_pages')) &&
-            get_user_option('rich_editing')) {
-            add_filter('mce_external_plugins', array($this, 'register_tinymce_plugin'));
-            add_filter('mce_buttons', array($this, 'add_tinymce_buttons'));
-            add_filter('teeny_mce_buttons', array($this, 'add_tinymce_buttons'));
-            add_filter('mce_css', array($this, 'add_tinymce_editor_sytle'));
-        }
-    }
 
-    public function register_plugin_styles()
-    {
-        global $wp_styles;
-        wp_enqueue_style('font-awesome-styles', plugins_url('assets/css/font-awesome.min.css', __FILE__), array(), self::VERSION, 'all');
-    }
 
-    public function setup_shortcode($params)
-    {
-        return '<i class="fa fa-' . esc_attr($params['name']) . '">&nbsp;</i>';
-    }
+function fntawe_register_tinymce_plugin( $plugin_array = array() ) {
+	$plugin_array['font_awesome_glyphs'] = plugins_url( 'assets/js/font-awesome.js', __FILE__);
 
-    public function register_tinymce_plugin($plugin_array)
-    {
-        $plugin_array['font_awesome_glyphs'] = plugins_url('assets/js/font-awesome.js', __FILE__);
-
-        return $plugin_array;
-    }
-
-    public function add_tinymce_buttons($buttons)
-    {
-        array_push($buttons, '|', 'font_awesome_glyphs');
-
-        return $buttons;
-    }
-
-    public function add_tinymce_editor_sytle($mce_css)
-    {
-        $mce_css .= ', ' . plugins_url('assets/css/admin/editor_styles.css', __FILE__);
-
-        return $mce_css;
-    }
+	return $plugin_array;
 }
 
-FontAwesome::setup();
+function fntawe_add_tinymce_buttons( $buttons = array() ) {
+	$buttons = (array) $buttons;
+	array_push( $buttons, '|', 'font_awesome_glyphs' );
+
+	return $buttons;
+}
+
+function fntawe_add_tinymce_editor_sytle( $mce_css ) {
+	$mce_css .= ', ' . plugins_url( 'assets/css/font-awesome.min.css', __FILE__ );
+
+	return $mce_css;
+}
