@@ -3,7 +3,7 @@
 Plugin Name: Font Awesome Icons
 Plugin URI: http://www.rachelbaker.me
 Description: Use the Font Awesome icon set within WordPress. Icons can be inserted using either HTML or a shortcode.
-Version: 4.6.1
+Version: 4.6.3
 Author: Rachel Baker
 Author URI: http://rachelbaker.me/font-awesome-icons-wordpress-plugins/
 Author Email: rachel@rachelbaker.me
@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /**
  * Constants
  */
-define( 'FONTAWESOME_VERSION', '4.6.1' );
+define( 'FONTAWESOME_VERSION', '4.6.3' );
 
 function fntawe_register_plugin_styles() {
 	global $wp_styles;
