@@ -3,7 +3,7 @@ Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho, @jeezys
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 4.6.1
+Tested up to: 4.6.3
 Stable tag: 4.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,9 +13,9 @@ Enables easy use of the Font Awesome icon font set from within WordPress.  Icons
 
 == Description ==
 
-Font Awesome is a pictographic font set of 361 icons. The icons are infinitely scalable and screen reader compatible.
+Font Awesome is a pictographic font set of 634 icons. The icons are infinitely scalable and screen reader compatible.
 
-A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://f.cl.ly/items/2e1b3q3g081M173m070I/FontAwesomeIconsCheatsheet.pdf)
+A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://fontawesome.io/cheatsheet/)
 
 To use any of the Font Awesome icons on your WordPress site you have three options:
 
@@ -61,7 +61,7 @@ __TinyMCE Plugin__
 
 Select the icon you would like to add to your post or page content from the Glyphs drop-down menu in the Visual Editor.
 
-![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg) 
+![image](http://f.cl.ly/items/212e2P0m3g39292p271y/Font-Awesome-TinyMCE-plugin.jpg)
 
 __Contributors Welcome__
 
@@ -95,18 +95,22 @@ __Author__
 
 == Changelog ==
 
+===June 1, 2016 ===
+
+*   Updated font and CSS files to Font Awesome 4.6.3 release.
+
 ===April 12, 2016 ===
 
-= 4.6 = 
+= 4.6 =
 
 *   Updated font and CSS files to Font Awesome 4.6.1 release. (Thanks to @jeezysevenrwd)
 
-= 4.5 = 
+= 4.5 =
 
 *   Updated font and CSS files to Font Awesome 4.5.0 release. (Thanks to @jeezysevenrwd)
 
 
-= 3.2.1 = 
+= 3.2.1 =
 
 *   Updated font and CSS files to Font Awesome 3.2.1 release. (Thanks to @tommarshall)
 *   Updated build/icons.yml file for reference. (Thanks to @tommarshall)
