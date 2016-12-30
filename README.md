@@ -1,21 +1,20 @@
-=== Font Awesome Icons ===
-Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho, @jeezysevenrwd
+# Font Awesome Icons
+## Contributors: rachelbaker, BFTrick, Taylor4484, tommarshall, rscarvalho, @jeezysevenrwd
 
 Tags: icons, font-awesome, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 4.6.3
-Stable tag: 4.6
+Tested up to: 4.7.0
+Stable tag: 4.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
 Enables easy use of the Font Awesome icon font set from within WordPress.  Icons can be inserted using either HTML, shortcode, or a built-in TinyMCE plugin.
 
-== Description ==
+### Description
+Font Awesome is a pictographic font set of 675 icons. The icons are infinitely scalable and screen reader compatible.
 
-Font Awesome is a pictographic font set of 634 icons. The icons are infinitely scalable and screen reader compatible.
-
-A full list of the 361 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://fontawesome.io/cheatsheet/)
+A full list of the 675 Font Awesome icons is available: [FontAwesomeIconsCheatsheet.pdf](http://fontawesome.io/cheatsheet/)
 
 To use any of the Font Awesome icons on your WordPress site you have three options:
 
@@ -71,8 +70,7 @@ __Author__
 
 *   [Rachel Baker](http://rachelbaker.me)
 
-== Installation ==
-
+#### Installation
 1. Upload Font Awesome Icons to the `/wp-content/plugins/` directory.
 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
@@ -81,10 +79,7 @@ __Author__
 
 4. Use either the HTML or Shortcode methods inside your text widgets.
 
-
-
-== Screenshots ==
-
+#### Screenshots
 1.  HTML code samples
 2.  Shortcode samples
 3.  TinyMCE plugin
@@ -92,8 +87,11 @@ __Author__
 
 
 
+##### Changelog
+===December 30, 2016 ===
 
-== Changelog ==
+*   Updated font and CSS files to Font Awesome 4.7.0 release.
+
 
 ===June 1, 2016 ===
 
